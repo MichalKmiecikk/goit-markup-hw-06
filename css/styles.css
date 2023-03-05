@@ -610,14 +610,14 @@ footer {
 }
 .whole-footer {
   display: flex;
-  width: 1200px;
+  justify-content: center;
   height: 252px;
   margin-right: auto;
   margin-left: auto;
   padding: 60px 0px;
 }
 .footer-area {
-  width: auto;
+  width: 250x;
 }
 .footer-area.container {
   padding: 60px 0px;
@@ -627,7 +627,6 @@ footer {
 }
 .footer-contacts-list {
   width: auto;
-  margin-right: 70px;
 }
 .footer-contacts-list .site {
   color: var(--main-white);
@@ -687,15 +686,28 @@ footer {
 }
 
 .footer-sl-area {
-  display: flex;
-  align-items: center;
+  display: block;
   margin-left: 0px;
-  margin-right: 0px;
-  width: 206px;
-  height: 100px;
+  height: 80px;
+  padding-right: 76px;
 }
-.footer-sl-area > .footer-sl-box:not(:last-child) {
+.footer-sl-area-boxes > .footer-sl-box:not(:last-child) {
   margin-right: 10px;
+}
+.footer-sl-area-title {
+  padding-bottom: 20px;
+  color: var(--main-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.footer-sl-area-boxes {
+  display: inline-flex;
+  width: auto;
+  height: 44px;
 }
 .footer-sl-box {
   display: flex;
@@ -723,6 +735,58 @@ footer {
   width: 20px;
   height: 20px;
 }
+.newsletter-area {
+  position: relative;
+  width: 570px;
+  height: 86px;
+}
+.newsletter-title {
+  color: var(--main-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.email-input {
+  position: absolute;
+  display: inline-flex;
+  align-items: flex-end;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  bottom: 0px;
+  left: 0px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--footerbackground-color);
+}
+.newsletter-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  color: var(--main-white);
+  background-color: var(--selection-color);
+  box-shadow: (0, 0, 0, 0.15);
+}
+/* newsletter - form */
+
+/* end - newsletter - form */
 
 /* portfolio */
 /* buttons */
