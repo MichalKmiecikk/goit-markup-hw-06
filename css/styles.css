@@ -754,6 +754,7 @@ footer {
   display: inline-flex;
   align-items: flex-end;
   padding-top: 15px;
+  color: var(--main-white);
   padding-bottom: 15px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -996,4 +997,59 @@ footer {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.form-title {
+  display: inline-flex;
+  width: 448px;
+  height: 34px;
+  background-color: green;
+  margin-bottom: 10px;
+}
+.form-position {
+  width: 448px;
+  height: 342px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+.form-name {
+  width: 448px;
+  height: 58px;
+  background-color: yellow;
+  margin-bottom: 10px;
+}
+.form-phone {
+  width: 448px;
+  height: 58px;
+  background-color: violet;
+  margin-bottom: 10px;
+}
+.form-email {
+  width: 448px;
+  height: 58px;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+.form-text {
+  width: 448px;
+  height: 138px;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+.form-check {
+  width: 419px;
+  height: 24px;
+  background-color: palegreen;
+  margin-bottom: 30px;
+}
+.form-button {
+  width: 200px;
+  height: 50px;
+  background-color: rebeccapurple;
 }
