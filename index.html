@@ -428,29 +428,55 @@
             <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
             <div class="form-position">
               <div class="form-name">
-                <label class="form-label" for="form-name">Imie</label>
-                <input class="form-input" name="form-name" type="text" id="form-name" />
+                <label class="form-label" for="form-name"><div>
+                       <svg class="svg-teamcard-sl-item">
+                    <use href="./images/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </div>Imie</label>
+                <input
+                  class="form-input"
+                  name="form-name"
+                  type="text"
+                  id="form-name"
+                />
               </div>
               <div class="form-phone">
-                <label class="form-label for="form-phone">Telefon</label>
-                <input class="form-input" name="form-phone" type="phone" id="form-phone" />
+                <label class="form-label" for="form-phone">Telefon</label>
+                <input
+                  class="form-input"
+                  name="form-phone"
+                  type="tel"
+                  id="form-phone"
+                />
               </div>
               <div class="form-email">
-                <label class="form-label for="form-email">Email</label>
-                <input class="form-input" name="form-email" type="email" id="form-email" />
+                <label class="form-label" for="form-email">Email</label>
+                <input
+                  class="form-input"
+                  name="form-email"
+                  type="email"
+                  id="form-email"
+                />
               </div>
               <div class="form-textarea">
-                <label class="form-label for="form-textarea">Komentarz</label>
-                <input class="form-input-textarea" name="form-textarea" type="text" id="form-textarea" row="6"/>
+                <label class="form-label" for="form-textarea">Komentarz</label>
+                <textarea
+                  class="form-input-textarea"
+                  name="form-textarea"
+                  placeholder="Wprowadź tekst"
+                  id="form-textarea"
+                  rows="6"
+                ></textarea>
               </div>
             </div>
             <div class="form-check">
-              <label class="form-label for="checkbox"></label>
-              <input class="form-label name="checkbox" type="checkbox" />
+              <input name="checkbox" type="checkbox" />
+              <label class="form-check-label" for="checkbox"
+                >Oświadczam iż akceptuję <span class="reg">Regulamin</span> i
+                <span class="reg">Politykę Prywatności.</span></label
+              >
             </div>
-            <div class="form-button">
-              <button type="submit"></button>
-            </div>
+            <button class="form-button" type="submit">Wyślij</button>
           </div>
         </form>
       </div>
