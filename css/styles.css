@@ -1021,19 +1021,46 @@ footer {
   margin-bottom: 20px;
 }
 .form-name {
+  position: relative;
   width: 448px;
   height: 58px;
   margin-bottom: 10px;
+}
+.icon-human {
+  position: absolute;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
 }
 .form-phone {
+  position: relative;
   width: 448px;
   height: 58px;
   margin-bottom: 10px;
 }
+.icon-formPhone {
+  position: absolute;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
+}
 .form-email {
+  position: relative;
   width: 448px;
   height: 58px;
   margin-bottom: 10px;
+}
+.icon-emailBlack {
+  position: absolute;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
 }
 .form-textarea {
   width: 448px;
@@ -1081,6 +1108,7 @@ footer {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
 }
 .form-input-textarea {
   width: 448px;
