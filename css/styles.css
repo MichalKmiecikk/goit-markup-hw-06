@@ -267,16 +267,16 @@ nav a {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 4px;
+  border: 1px solid #2196f3;
   color: var(--main-white);
   background-color: var(--selection-color);
-  transition-property: border, box-shadow;
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus,
 .main-button:active {
-  border: 1px solid #2196f3;
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
 }
