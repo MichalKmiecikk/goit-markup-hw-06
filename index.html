@@ -414,6 +414,9 @@
               <button class="newsletter-button" type="submit">
                 Zapisz się
               </button>
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-iconSend" />
+              </svg>
             </form>
           </div>
         </div>
@@ -429,45 +432,45 @@
             <div class="form-position">
               <div class="form-name">
                 <label class="form-label" for="form-name">Imie</label>
-                <div class="icon-human">
-                  <svg class="svg-icon-human" width="18" height="18">
-                    <use href="./images/icons.svg#icon-human"></use>
-                  </svg>
-                </div>
                 <input
                   class="form-input"
                   name="form-name"
                   type="text"
                   id="form-name"
                 />
+                <div class="icon-human">
+                  <svg>
+                    <use href="./images/icons.svg#icon-human"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-phone">
                 <label class="form-label" for="form-phone">Telefon</label>
-                <div class="icon-formPhone">
-                  <svg class="svg-icon-formPhone" width="18" height="18">
-                    <use href="./images/icons.svg#icon-formPhone"></use>
-                  </svg>
-                </div>
                 <input
                   class="form-input"
                   name="form-phone"
                   type="tel"
                   id="form-phone"
                 />
+                <div class="icon-formPhone">
+                  <svg>
+                    <use href="./images/icons.svg#icon-formPhone"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-email">
                 <label class="form-label" for="form-email">Email</label>
-                <div class="icon-emailBlack">
-                  <svg class="svg-icon-emailBlack">
-                    <use href="./images/icons.svg#icon-emailBlack"></use>
-                  </svg>
-                </div>
                 <input
                   class="form-input"
                   name="form-email"
                   type="email"
                   id="form-email"
                 />
+                <div class="icon-emailBlack">
+                  <svg>
+                    <use href="./images/icons.svg#icon-emailBlack"></use>
+                  </svg>
+                </div>
               </div>
               <div class="form-textarea">
                 <label class="form-label" for="form-textarea">Komentarz</label>
@@ -483,8 +486,11 @@
             <div class="form-check">
               <input name="checkbox" type="checkbox" />
               <label class="form-check-label" for="checkbox"
-                >Oświadczam iż akceptuję <span class="reg">Regulamin</span> i
-                <span class="reg">Politykę Prywatności.</span></label
+                >Oświadczam iż akceptuję
+                <span class="reg"><a href="#">Regulamin</a></span> i
+                <span class="reg"
+                  ><a href="#">Politykę Prywatności.</a></span
+                ></label
               >
             </div>
             <button class="form-button" type="submit">Wyślij</button>

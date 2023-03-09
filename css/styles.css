@@ -268,18 +268,16 @@ nav a {
   padding-bottom: 10px;
   border-radius: 4px;
   color: var(--main-white);
-  background: var(--selection-color);
+  background-color: var(--selection-color);
+  transition-property: border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .main-button:hover,
 .main-button:focus,
 .main-button:active {
-  color: var(--main-white);
-  background: var(--selection-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  border: 1px solid #2196f3;
+  box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
 }
 
@@ -769,7 +767,6 @@ footer {
 .newsletter-button {
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 16px;
   font-weight: 700;
@@ -779,11 +776,30 @@ footer {
   bottom: 0px;
   right: 0px;
   border-radius: 4px;
+  border: 1px solid #0000001a;
   width: 200px;
   height: 50px;
-  color: var(--main-white);
+  padding-left: 42px;
   background-color: var(--selection-color);
-  box-shadow: (0, 0, 0, 0.15);
+  color: var(--main-white);
+  transition-property: border, box-shadow, cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.newsletter-button:hover,
+.newsletter-button:focus,
+.newsletter-button:active {
+  border: 1px solid #080c0f;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+}
+.icon-send {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  fill: var(--main-white);
+  right: 28px;
+  bottom: 13px;
 }
 /* newsletter - form */
 
@@ -997,6 +1013,19 @@ footer {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--main-white);
+  transition-property: border, background-color, box-shadow, cursor, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover,
+.close-btn:focus,
+.close-btn:active {
+  color: var(--main-white);
+  background-color: var(--selection-color);
+  border: 1px solid var(--main-white);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
 }
 .form-area {
   display: flex;
@@ -1033,6 +1062,9 @@ footer {
   height: 18px;
   bottom: 11px;
   left: 12px;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-phone {
   position: relative;
@@ -1047,6 +1079,9 @@ footer {
   height: 18px;
   bottom: 11px;
   left: 12px;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-email {
   position: relative;
@@ -1061,6 +1096,9 @@ footer {
   height: 18px;
   bottom: 11px;
   left: 12px;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea {
   width: 448px;
@@ -1068,13 +1106,6 @@ footer {
   margin-bottom: 10px;
 }
 
-.form-input-textarea {
-  align-items: center;
-  padding: 12px 16px;
-  resize: none;
-  width: 416px;
-  height: 96px;
-}
 .form-check {
   width: 419px;
   height: 24px;
@@ -1092,7 +1123,17 @@ footer {
   width: 200px;
   height: 50px;
   border-radius: 4px;
+  border: none;
   background-color: var(--selection-color);
+  transition-property: border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover,
+.form-button:focus,
+.form-button:active {
+  border: 1px solid #2196f3;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 .form-label {
   font-size: 12px;
@@ -1109,14 +1150,43 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-input:focus {
+  outline: none;
+  border-color: var(--selection-color);
+}
+.form-input:focus + .icon-human,
+.form-input:focus + .icon-emailBlack,
+.form-input:focus + .icon-formPhone {
+  fill: var(--selection-color);
+}
+
 .form-input-textarea {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  align-items: center;
+  padding: 12px 16px;
+  resize: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.reg {
+.form-input-textarea:focus {
+  outline: none;
+  border-color: var(--selection-color);
+}
+.reg > a {
   text-decoration: underline;
   color: var(--selection-color);
   font-size: 14px;
