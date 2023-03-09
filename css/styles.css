@@ -1135,6 +1135,7 @@ footer {
 .form-button:active {
   border: 1px solid #2196f3;
   box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
 }
 .form-label {
   font-size: 12px;
