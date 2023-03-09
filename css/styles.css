@@ -1125,6 +1125,7 @@ footer {
   height: 50px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
   background-color: var(--selection-color);
   transition-property: border, box-shadow;
   transition-duration: 250ms;
@@ -1217,7 +1218,7 @@ footer {
   transition: visibility;
 }
 .checkbox-input:checked {
-  visibility: hidden;
+  opacity: 0;
 }
 .checkbox-bird {
   position: absolute;
