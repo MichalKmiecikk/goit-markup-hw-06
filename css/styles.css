@@ -177,6 +177,7 @@ nav a {
 }
 
 .contact {
+  position: relative;
   display: flex;
   gap: 50px;
   margin-left: auto;
@@ -208,13 +209,26 @@ nav a {
 /* obrazy svg */
 .svg-contact-mail {
   display: inline-block;
-  width: 16px;
-  height: 12px;
+  width: 22px;
+  height: 16px;
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+}
+.mail-area {
+  width: 135px;
+}
+.phone-area {
+  width: 110px;
 }
 .svg-contact-phone {
   display: inline-block;
-  width: 10px;
+  align-self: center;
+  width: 20px;
   height: 16px;
+  position: absolute;
+  right: 115px;
+  top: 2px;
 }
 
 /* end-navigation menu */
